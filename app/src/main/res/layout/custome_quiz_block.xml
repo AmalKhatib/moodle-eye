@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="330dp"
+    android:layout_marginBottom="-20dp"
+    android:background="@drawable/img_quiz_bg">
+
+    <ImageView
+        android:id="@+id/ic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_quiz"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="40dp"/>
+
+    <TextView
+        android:id="@+id/tv_quiz_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/ic"
+        android:layout_marginTop="40dp"
+        android:text="اختبار قصير"
+        android:textColor="@color/header"
+        android:textSize="18sp"
+        android:layout_marginStart="10dp"/>
+
+    <TextView
+        android:id="@+id/tv_quiz_intro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/ic"
+        android:layout_below="@id/tv_quiz_name"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="40dp"
+        android:text="هنا تقع فاصيل الاختبار. هنا تقع تفاصيل الاختبار."/>
+
+    <Button
+        android:id="@+id/btn_begin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_quiz_intro"
+        android:text="الذهاب للاختبار"
+        android:backgroundTint="@color/colorPrimary"
+        android:textSize="18sp"
+        android:textColor="@android:color/white"
+        android:background="@drawable/bg_rounded"
+        android:padding="10dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginStart="50dp"
+        android:drawablePadding="10dp"
+        android:drawableStart="@drawable/ic_circular_arrow"/>
+
+</RelativeLayout>

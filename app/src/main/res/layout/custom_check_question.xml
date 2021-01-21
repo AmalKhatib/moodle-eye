@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/img_check"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_checked"
+        android:paddingTop="7dp"
+        android:paddingBottom="2dp"
+        android:paddingEnd="5dp"/>
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="0.7dp"
+        android:layout_height="29.5dp"
+        android:background="@color/colorAccent"
+        android:layout_below="@id/img_check"
+        android:layout_marginStart="10dp"/>
+
+    <TextView
+        android:id="@+id/tv_question"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/img_check"
+        android:textSize="17sp"
+        android:text="هنا يقع السؤال. هنا يقع السؤال؟"/>
+
+    <TextView
+        android:id="@+id/tv_answer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/img_check"
+        android:layout_below="@id/tv_question"
+        android:textColor="#918B8B"
+        android:lines="1"
+        android:ellipsize="end"
+        android:text="هنا تقع الاجابة."/>
+</RelativeLayout>

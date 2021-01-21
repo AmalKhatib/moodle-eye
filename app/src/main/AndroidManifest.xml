@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.moodleeye">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name=".KodeinApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".ui.content.quiz.EarlyQuizActivity"></activity>
+        <activity android:name=".ui.content.quiz.QuizGradeActivity" />
+        <activity android:name=".ui.content.quiz.QuizSubmissionActivity" />
+        <activity android:name=".ui.content.quiz.QuizActivity" />
+        <activity android:name=".ui.content.course.CourseDetailsActivity" />
+        <activity android:name=".ui.content.course.CoursesActivity" />
+        <activity android:name=".ui.auth.LoginActivity" />
+        <activity android:name=".ui.promo.WalkthroughtActivity" />
+        <activity android:name=".ui.promo.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".TtsActivity" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".AudioActivity" />
+    </application>
+
+</manifest>

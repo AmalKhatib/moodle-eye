@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/background"
+    tools:context=".ui.content.quiz.QuizActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/ic_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_arrow"
+                android:paddingStart="15dp"/>
+
+            <me.relex.circleindicator.CircleIndicator
+                android:id="@+id/indicator_quiz"
+                android:layout_marginBottom="57dp"
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                app:ci_drawable="@drawable/bg_indicator"
+                app:ci_drawable_unselected="@drawable/bg_indictor_not_selected"
+                android:rotationY="180"/>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_timer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="00:00"
+            android:layout_gravity="center_horizontal"
+            android:textSize="25sp"/>
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/view_pager_questions"
+            android:layout_width="match_parent"
+            android:layout_height="450dp">
+        </androidx.viewpager.widget.ViewPager>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:weightSum="2">
+
+            <Button
+                android:id="@+id/btn_next"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_marginEnd="10dp"
+                android:layout_height="wrap_content"
+                android:text="التالي"
+                android:textSize="18sp"
+                android:textColor="@android:color/white"
+                android:background="@drawable/bg_rounded"
+                android:backgroundTint="@color/colorPrimary"
+                android:padding="10dp"
+                android:drawablePadding="10dp"
+                android:drawableStart="@drawable/ic_circular_arrow"/>
+
+            <Button
+                android:id="@+id/btn_prev"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_marginStart="10dp"
+                android:layout_height="wrap_content"
+                android:text="السابق"
+                android:textSize="18sp"
+                android:textColor="@android:color/white"
+                android:background="@drawable/bg_rounded"
+                android:backgroundTint="@color/colorPrimary"
+                android:padding="10dp"
+                android:drawablePadding="10dp"
+                android:drawableEnd="@drawable/ic_prev"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

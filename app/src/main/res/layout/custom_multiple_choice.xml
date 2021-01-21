@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:gravity="center_horizontal">
+
+    <TextView
+        android:id="@+id/tv_question"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:padding="15dp"
+        android:textSize="25sp"
+        android:textColor="@color/header"
+        android:textAlignment="center"
+        android:text="هنا يقع السؤال. هنا يقع السؤال. هنا يقع السؤال. هنا يقع السؤال؟"/>
+
+    <Button
+        android:id="@+id/btn_first"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="btnChoiceClicked"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/bg_rounded"
+        android:elevation="7dp"
+        android:textAlignment="viewStart"
+        android:padding="15dp"
+        android:textColor="@color/choice"
+        android:textSize="18sp"
+        android:text="أ.  الخيار الأول يقع هنا"/>
+
+    <Button
+        android:id="@+id/btn_second"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="btnChoiceClicked"
+        android:textAlignment="viewStart"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:elevation="5dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/bg_rounded"
+        android:padding="15dp"
+        android:textColor="@color/choice"
+        android:textSize="18sp"
+        android:text="ب.  الخيار الثاني يقع هنا"/>
+
+    <Button
+        android:id="@+id/btn_third"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="btnChoiceClicked"
+        android:textAlignment="viewStart"
+        android:layout_marginStart="20dp"
+        android:elevation="5dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/bg_rounded"
+        android:padding="15dp"
+        android:textColor="@color/choice"
+        android:textSize="18sp"
+        android:text="ج.  الخيار الثالث يقع هنا"/>
+</LinearLayout>
